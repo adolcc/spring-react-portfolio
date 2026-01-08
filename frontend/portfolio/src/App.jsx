@@ -1,30 +1,57 @@
 import "./App.css";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-8">
-      <h1 className="text-4xl font-bold text-blue-600 mb-4">
-        ¡Tailwind está funcionando! ✅
-      </h1>
-      <div className="bg-white p-6 rounded-xl shadow-lg max-w-md">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-3">
-          Prueba de estilos
-        </h2>
-        <p className="text-gray-600 mb-4">
-          Si ves un fondo gris claro, texto azul y esta tarjeta blanca con
-          sombra, entonces Tailwind CSS está funcionando correctamente.
-        </p>
-        <div className="flex space-x-4">
-          <button className="btn-primary bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">
-            Botón Primario
-          </button>
-          <button className="border border-blue-500 text-blue-500 hover:bg-blue-50 px-4 py-2 rounded-lg transition">
-            Botón Secundario
-          </button>
-        </div>
-      </div>
+    <div className="min-h-screen bg-gray-100">
+      <Header />
+      <main className="pt-16">
+        <section
+          id="home"
+          className="min-h-screen flex items-center justify-center"
+        >
+          <div className="text-center">
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
+              Tu Nombre
+            </h1>
+            <h2 className="text-2xl md:text-3xl text-blue-600 mb-6">
+              Desarrollador Java / Backend
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Creo aplicaciones seguras y escalables con Java
+            </p>
+          </div>
+        </section>
+        <section id="about" className="min-h-screen py-20 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
+              Sobre mí
+            </h2>
+          </div>
+        </section>
+        <section id="projects" className="min-h-screen py-20 px-4 bg-white">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+              Proyectos
+            </h2>
+          </div>
+        </section>
+        <section id="tech-stack" className="py-20 px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+              Stack Tecnológico
+            </h2>
+          </div>
+        </section>
+        <section id="contact" className="py-20 px-4 bg-gray-50">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+              Contacto
+            </h2>
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
-
 export default App;
