@@ -4,10 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+      "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "docker:dev": "docker-compose up dev",
+  "docker:prod": "docker-compose up prod", 
+  "docker:build": "docker build -t portfolio .",
+  "docker:run": "docker run -p 8080:80 portfolio",
+  "docker:stop": "docker-compose down"
   },
   "dependencies": {
     "lucide-react": "^0.562.0",
