@@ -36,11 +36,11 @@ export default function About() {
 
             <p className="mb-4">
               Recently, I completed specialized training in{" "}
-              <strong>Spring Framework (350 hours)</strong> and{" "}
-              <strong>Java fundamentals (90 hours)</strong> through Barcelona
-              Activa. I'm now building projects with Java 17+, Spring Boot, REST
-              APIs, Docker, and MongoDB, applying software engineering
-              principles like SOLID, Clean Code, and TDD.
+              <strong>Spring Framework </strong> and{" "}
+              <strong>Java fundamentals </strong> through Barcelona Activa. I'm
+              now building projects with Java 17+, Spring Boot, REST APIs,
+              Docker, and MongoDB, applying software engineering principles like
+              SOLID, Clean Code, and TDD.
             </p>
 
             <p className="mb-0">
