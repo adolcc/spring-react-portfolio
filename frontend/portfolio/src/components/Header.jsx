@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, Download, Mail } from "lucide-react";
+import {
+  Menu,
+  X,
+  Download,
+  Mail,
+  Home,
+  User,
+  FolderKanban,
+  Cpu,
+  MessageSquare,
+} from "lucide-react";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,117 +25,101 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About Me", href: "#about" },
-    { name: "Projects", href: "#projects" },
-    { name: "Tech Stack", href: "#tech-stack" },
+    { name: "Home", href: "#home", icon: <Home size={18} /> },
+    { name: "About", href: "#about", icon: <User size={18} /> },
+    { name: "Projects", href: "#projects", icon: <FolderKanban size={18} /> },
+    { name: "Tech", href: "#tech-stack", icon: <Cpu size={18} /> },
+    { name: "Contact", href: "#contact", icon: <MessageSquare size={18} /> },
   ];
 
   const handleDownloadCV = () => {
     const cvUrl = "/cv.pdf";
     const link = document.createElement("a");
     link.href = cvUrl;
-    link.download = "CV_Java_Developer.pdf";
+    link.download = "Adolfo_Caicaguare_Java_Developer_CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
-  const handleContact = () => {
-    window.location.href = "#contact";
-  };
-
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 backdrop-blur-sm shadow-lg" : "bg-white"
+        isScrolled
+          ? "bg-white/95 backdrop-blur-sm shadow-lg border-b border-gray-100"
+          : "bg-white"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <a href="#home" className="text-2xl font-bold text-gray-900">
-              {"<JD/>"}
-            </a>
+          {/* Empty left side - just for spacing */}
+          <div className="flex-shrink-0 w-0 md:w-auto">
+            {/* Intentional empty space */}
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Centered Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+                className="flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium text-sm"
               >
-                {item.name}
+                {item.icon}
+                <span>{item.name}</span>
               </a>
             ))}
           </div>
 
-          {/* CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Right side CTA Buttons */}
+          <div className="flex items-center space-x-3">
+            {/* Download CV button - visible on all screens */}
             <button
               onClick={handleDownloadCV}
-              className="flex items-center gap-2 px-4 py-2 text-blue-600 border-2 border-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-200 font-medium"
+              className="flex items-center gap-2 px-4 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition-all duration-200 font-medium text-sm"
             >
-              <Download size={18} />
-              Download CV
+              <Download size={16} />
+              <span className="hidden sm:inline">CV</span>
             </button>
-            <button
-              onClick={handleContact}
-              className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
-            >
-              <Mail size={18} />
-              Contact
-            </button>
-          </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="p-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded-lg transition-colors"
+                aria-label="Toggle menu"
+              >
+                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
           </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden py-4 border-t border-gray-100 bg-white/95 backdrop-blur-sm">
+            <div className="flex flex-col space-y-1">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium px-2"
+                  className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200 font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  {item.name}
+                  {item.icon}
+                  <span>{item.name}</span>
                 </a>
               ))}
-              <div className="flex flex-col space-y-2 pt-4 border-t border-gray-200">
+              <div className="pt-4 mt-2 border-t border-gray-100">
                 <button
                   onClick={() => {
                     handleDownloadCV();
                     setIsMobileMenuOpen(false);
                   }}
-                  className="flex items-center justify-center gap-2 px-4 py-2 text-blue-600 border-2 border-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-200 font-medium"
+                  className="w-full flex items-center justify-center gap-2 px-4 py-3 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition-colors font-medium"
                 >
-                  <Download size={18} />
-                  Download CV
-                </button>
-                <button
-                  onClick={() => {
-                    handleContact();
-                    setIsMobileMenuOpen(false);
-                  }}
-                  className="flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
-                >
-                  <Mail size={18} />
-                  Contact
+                  <Download size={16} />
+                  Download Full CV (PDF)
                 </button>
               </div>
             </div>
