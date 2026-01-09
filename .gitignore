@@ -4,7 +4,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .npm/
-package-lock.json
 
 # Build
 dist/
@@ -29,12 +28,3 @@ build/
 # System
 .DS_Store
 Thumbs.db
-
-# Docker
-.dockerignore
-Dockerfile
-docker-compose.yml
-
-# Vercel
-.vercel
-vercel.json
