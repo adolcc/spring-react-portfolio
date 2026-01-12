@@ -2,18 +2,18 @@ import React from "react";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 px-4 bg-white">
+    <section id="about" className="py-12 md:py-16 px-4 md:px-6 bg-white">
       <div className="max-w-4xl mx-auto">
         {/* Título */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             About Me
           </h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
         </div>
 
         {/* Contenido simple */}
-        <div className="bg-gray-50 rounded-xl p-8 md:p-10 border border-gray-200">
+        <div className="bg-gray-50 rounded-xl p-4 md:p-10 border border-gray-200">
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="mb-4">
               I'm a <strong>Java Backend Developer</strong> transitioning from a

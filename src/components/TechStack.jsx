@@ -282,12 +282,12 @@ export default function TechStack() {
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-8 px-2">
           {categories.map((category) => (
             <button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
-              className={`flex items-center gap-2 px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+              className={`flex items-center gap-1 px-3 py-2 rounded-lg font-medium transition-all duration-200 text-sm ${
                 activeCategory === category.id
                   ? "bg-blue-600 text-white shadow-lg"
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -296,7 +296,7 @@ export default function TechStack() {
               {category.icon}
               <span>{category.label}</span>
               <span
-                className={`px-2 py-1 text-xs rounded-full ${
+                className={`px-1.5 py-0.5 text-xs rounded-full ${
                   activeCategory === category.id ? "bg-white/20" : "bg-gray-200"
                 }`}
               >
@@ -307,7 +307,7 @@ export default function TechStack() {
         </div>
 
         {/* Technologies Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
           {getFilteredTech().map((tech) => (
             <div
               key={tech.id}

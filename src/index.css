@@ -133,3 +133,32 @@
   animation: float-delayed 7s ease-in-out infinite;
   animation-delay: 2s;
 }
+
+/* Mejoras para móvil */
+@media (max-width: 768px) {
+  .animate-float,
+  .animate-float-slow,
+  .animate-float-slower,
+  .animate-float-delayed {
+    animation-duration: 4s;
+  }
+
+  .animate-blob {
+    animation-duration: 10s;
+  }
+}
+
+/* Mejorar tap targets en móvil */
+@media (max-width: 640px) {
+  button,
+  a[role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}

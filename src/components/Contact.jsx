@@ -26,7 +26,7 @@ export default function Contact() {
       icon: <Linkedin size={24} />,
       title: "LinkedIn",
       value: "linkedin.com/in/yourusername",
-      href: "https://linkedin.com/in/yourusername",
+      href: "www.linkedin.com/in/adolfo-caicaguare",
       description: "Professional profile & experience",
       color: "from-blue-600 to-blue-800",
       buttonText: "Connect",
@@ -35,7 +35,7 @@ export default function Contact() {
       icon: <Github size={24} />,
       title: "GitHub",
       value: "github.com/yourusername",
-      href: "https://github.com/yourusername",
+      href: "https://github.com/adolcc",
       description: "Projects & code repositories",
       color: "from-gray-800 to-gray-900",
       buttonText: "View Code",
@@ -75,7 +75,7 @@ export default function Contact() {
         </div>
 
         {/* Main Contact Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
           {contactInfo.map((contact, index) => (
             <div
               key={index}
@@ -120,7 +120,7 @@ export default function Contact() {
         </div>
 
         {/* Quick Info & CV Download */}
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           {/* Quick Info */}
           <div className="lg:col-span-2">
             <div className="bg-gray-800 rounded-2xl p-8 h-full">
