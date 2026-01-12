@@ -2,56 +2,20 @@
   "projects": [
     {
       "id": 1,
-      "title": "PDgigs - Freelance Platform API",
-      "description": "Backend API for a freelance platform with job posting, proposals, and payment system. Built with Spring Boot and microservices architecture.",
+      "title": "PDgigs - Music Score Management System",
+      "description": "Reactive RESTful API for managing music scores in PDF format, built with Spring WebFlux and MongoDB.",
       "longDescription": "A complete freelance platform backend featuring user authentication, job posting system, proposal management, and integrated payment processing. The architecture follows microservices principles with API Gateway pattern.",
       "stack": ["Java 17", "Spring Boot", "Spring Security", "MongoDB", "Docker", "JWT"],
       "videoUrl": "/demos/pdgigs-demo.mp4",
       "demoUrl": "https://pdgigs-demo.vercel.app",
       "docsUrl": "https://pdgigs-api-docs.swagger.io",
-      "githubUrl": "https://github.com/yourusername/pdgigs-api",
+      "githubUrl": "https://github.com/adolcc/pdgigs",
       "features": [
         "JWT-based authentication & authorization",
         "RESTful API with proper status codes",
         "Docker containerization",
         "Integration tests with Testcontainers",
         "API documentation with Swagger/OpenAPI"
-      ]
-    },
-    {
-      "id": 2,
-      "title": "TaskFlow - Task Management System",
-      "description": "REST API for task management with teams, assignments, and real-time notifications.",
-      "longDescription": "Complete task management system with team collaboration features, task assignments, deadlines, and real-time notifications using WebSockets.",
-      "stack": ["Java 17", "Spring Boot", "PostgreSQL", "WebSocket", "Redis", "Spring Data JPA"],
-      "videoUrl": "/demos/taskflow-demo.mp4",
-      "demoUrl": "https://taskflow-demo.netlify.app",
-      "docsUrl": "https://taskflow-api-docs.swagger.io",
-      "githubUrl": "https://github.com/yourusername/taskflow-api",
-      "features": [
-        "Real-time updates with WebSocket",
-        "Role-based access control",
-        "Email notifications",
-        "Redis caching for performance",
-        "Comprehensive API documentation"
-      ]
-    },
-    {
-      "id": 3,
-      "title": "E-Commerce API",
-      "description": "Backend for an e-commerce platform with products, cart, orders, and payment integration.",
-      "longDescription": "Full-featured e-commerce API supporting product catalog, shopping cart, order processing, and payment gateway integration. Includes admin dashboard endpoints.",
-      "stack": ["Java 17", "Spring Boot", "MySQL", "Spring Security", "Stripe API", "Docker"],
-      "videoUrl": "/demos/ecommerce-demo.mp4",
-      "demoUrl": "https://ecommerce-demo.vercel.app",
-      "docsUrl": "https://ecommerce-api-docs.swagger.io",
-      "githubUrl": "https://github.com/yourusername/ecommerce-api",
-      "features": [
-        "Stripe payment integration",
-        "Product inventory management",
-        "Order tracking system",
-        "Admin and user roles",
-        "Docker Compose for local development"
       ]
     }
   ]

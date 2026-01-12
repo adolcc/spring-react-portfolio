@@ -25,7 +25,7 @@ export default function Contact() {
     {
       icon: <Linkedin size={24} />,
       title: "LinkedIn",
-      value: "linkedin.com/in/yourusername",
+      value: "www.linkedin.com/in/adolfo-caicaguare",
       href: "www.linkedin.com/in/adolfo-caicaguare",
       description: "Professional profile & experience",
       color: "from-blue-600 to-blue-800",
@@ -34,7 +34,7 @@ export default function Contact() {
     {
       icon: <Github size={24} />,
       title: "GitHub",
-      value: "github.com/yourusername",
+      value: "https://github.com/adolcc",
       href: "https://github.com/adolcc",
       description: "Projects & code repositories",
       color: "from-gray-800 to-gray-900",
@@ -267,7 +267,7 @@ export default function Contact() {
                 Send an Email
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="www.linkedin.com/in/adolfo-caicaguare"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white font-medium rounded-lg transition-colors"

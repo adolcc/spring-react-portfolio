@@ -1,5 +1,5 @@
 import React from "react";
-import { Code2, FolderGit2, Zap, Github } from "lucide-react"; // <-- Agregar Github aquí
+import { Code2, FolderGit2, Zap, Github } from "lucide-react";
 import ProjectCard from "./ProjectCard";
 import projectsData from "../data/projects.json";
 
@@ -52,34 +52,6 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* Note about video demos */}
-        <div className="max-w-3xl mx-auto bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-12">
-          <div className="flex items-start gap-4">
-            <div className="bg-blue-100 p-3 rounded-full flex-shrink-0">
-              <Zap className="text-blue-600" size={20} />
-            </div>
-            <div>
-              <h4 className="text-lg font-bold text-gray-900 mb-2">
-                About the Demos
-              </h4>
-              <p className="text-gray-700 mb-2">
-                Each project includes a 1-2 minute video demo showing the API in
-                action. The videos demonstrate endpoints being tested via
-                Postman/Swagger, database interactions, and key features working
-                in real-time.
-              </p>
-              <p className="text-gray-700">
-                <strong>Note:</strong> You'll need to add your own demo videos
-                to the
-                <code className="mx-1 px-2 py-1 bg-white rounded text-sm">
-                  /public/demos/
-                </code>
-                folder. For now, placeholder videos are shown.
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/* GitHub Call to Action */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 text-white">
@@ -89,7 +61,7 @@ export default function Projects() {
               the complete source code of everything shown here.
             </p>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/adolcc"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-3 bg-white text-gray-900 font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
