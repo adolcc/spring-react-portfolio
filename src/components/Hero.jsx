@@ -15,12 +15,12 @@ export default function Hero() {
   const socialLinks = [
     {
       icon: <Github size={20} />,
-      href: "https://github.com/yourusername",
+      href: "https://github.com/adolcc",
       label: "GitHub",
     },
     {
       icon: <Linkedin size={20} />,
-      href: "https://github.com/adolcc",
+      href: "https://www.linkedin.com/in/adolfo-caicaguare",
       label: "LinkedIn",
     },
     {

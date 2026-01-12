@@ -25,8 +25,8 @@ export default function Contact() {
     {
       icon: <Linkedin size={24} />,
       title: "LinkedIn",
-      value: "www.linkedin.com/in/adolfo-caicaguare",
-      href: "www.linkedin.com/in/adolfo-caicaguare",
+      value: "linkedin.com/in/adolfo-caicaguare",
+      href: "https://www.linkedin.com/in/adolfo-caicaguare",
       description: "Professional profile & experience",
       color: "from-blue-600 to-blue-800",
       buttonText: "Connect",
@@ -267,7 +267,7 @@ export default function Contact() {
                 Send an Email
               </a>
               <a
-                href="www.linkedin.com/in/adolfo-caicaguare"
+                href="https://www.linkedin.com/in/adolfo-caicaguare"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white font-medium rounded-lg transition-colors"
