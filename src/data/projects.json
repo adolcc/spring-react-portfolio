@@ -1,41 +1,45 @@
 {
   "projects": [
     {
-      "id": 1,
-      "title": "ITA Challenges Platform",
-      "description": "Team-built platform for programming challenges with submission and ranking system.",
-      "stack": ["Java", "Spring Boot", "PostgreSQL", "JWT", "React", "TypeScript"],
-      "demoUrl": "http://dev.ita-challenges.eurecatacademy.org/ita-challenge/challenges",
-      "githubUrl": "https://github.com/IT-Academy-BCN/ita-challenges-backend",
-      "status": "🚀 In Production",
-      "features": [
-        "Team collaboration project",
-        "Full authentication system",
-        "Challenge submission workflow",
-        "Production deployment"
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Developer Portfolio",
-      "description": "This responsive portfolio built with Spring Boot backend and React frontend.",
-      "stack": ["Java", "Spring Boot", "React", "Vercel"],
-      "demoUrl": "https://spring-react-portfolio.vercel.app/",
-      "githubUrl": "https://github.com/adolcc/spring-react-portfolio",
-      "status": "✅ Live & Maintained",
-      "features": [
-        "Full-stack demonstration",
-        "Easy content updates via JSON",
-        "Responsive design",
-        "Auto-deployment pipeline"
-      ]
-    },
+  "id": 1,
+  "title": "ITA Challenges Platform",
+  "description": "A collaborative, microservices-based platform for programming challenges, built by a team of academy students.",
+  "longDescription": "Contributed to the backend development of this multi-service platform. Gained hands-on experience with Java, Spring Boot, and MongoDB in a real-world team environment following agile methodologies. The system features JWT authentication and is designed to handle coding challenge submissions and evaluations.",
+  "stack": ["Java", "Spring Boot", "MongoDB", "Microservices", "JWT", "Angular"],
+  "demoUrl": "http://dev.ita-challenges.eurecatacademy.org/ita-challenge/challenges",
+  "githubUrl": "https://github.com/IT-Academy-BCN/ita-challenges-backend",
+  "githubUrlFrontend": "https://github.com/IT-Academy-BCN/ita-challenges-frontend",
+  "status": "🚀 In Production",
+  "features": [
+    "Collaborative development in a multi-repository project",
+    "Microservices architecture with Spring Boot",
+    "JWT-based authentication system",
+    "Production deployment and team workflow experience"
+  ]
+},
+   {
+  "id": 2,
+  "title": "Developer Portfolio",
+  "description": "Modern, responsive portfolio website to showcase my projects and skills.",
+  "longDescription": "A single-page application built with React and deployed on Vercel. Features a clean, responsive design with dynamic content management. This site itself demonstrates practical frontend development skills and serves as the central hub for my professional profile.",
+  "stack": ["React", "JavaScript", "Tailwind CSS", "Vercel"],
+  "demoUrl": "https://spring-react-portfolio.vercel.app/",
+  "githubUrl": "https://github.com/adolcc/spring-react-portfolio",
+  "status": "✅ Live & Maintained",
+  "features": [
+    "Fast and responsive single-page application",
+    "Dynamic content loading from JSON",
+    "Modern UI with Tailwind CSS",
+    "Continuous deployment via Vercel"
+  ]
+},
     {
       "id": 3,
       "title": "PDFGigs - Sheet Music Manager",
       "description": "Hexagonal architecture application for musicians to manage PDF scores with reactive backend.",
-      "longDescription": "Full-stack application implementing Hexagonal Architecture (Ports & Adapters) with Spring WebFlux. Features domain-driven design, clear separation of concerns, and Minecraft-themed UI. Built with reactive programming for non-blocking I/O operations.",
+      "longDescription": "Full-stack application implementing Hexagonal Architecture (Ports & Adapters) with Spring WebFlux. Features domain-driven design, clear separation of concerns, and Minecraft-themed UI. Built with reactive programming for non-blocking I/O operations. Currently in active development with focus on clean architecture patterns.",
       "stack": ["Java 17", "Spring WebFlux", "MongoDB", "Hexagonal Architecture", "Docker", "React", "TailwindCSS"],
+      "githubUrl": "https://github.com/adolcc/pdgigs",
       "githubUrlBackend": "https://github.com/adolcc/pdgigs",
       "githubUrlFrontend": "https://github.com/adolcc/pdgigs-frontend",
       "status": "🛠️ Actively Developing",
@@ -47,8 +51,7 @@
         "Minecraft-inspired creative UI",
         "JWT authentication system",
         "Docker containerization"
-      ],
-      "architecture": "Hexagonal (Ports & Adapters)"
+      ]
     }
   ]
 }
