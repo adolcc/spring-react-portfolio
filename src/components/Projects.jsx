@@ -8,8 +8,8 @@ export default function Projects() {
 
   const stats = [
     { icon: <Code2 size={20} />, label: "Java Projects", value: "3+" },
-    { icon: <FolderGit2 size={20} />, label: "GitHub Repos", value: "5+" },
-    { icon: <Zap size={20} />, label: "APIs Built", value: "15+" },
+    { icon: <FolderGit2 size={20} />, label: "GitHub Repos", value: "20+" },
+    { icon: <Zap size={20} />, label: "APIs Built", value: "20+" },
   ];
 
   return (
