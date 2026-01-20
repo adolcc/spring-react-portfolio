@@ -2,21 +2,53 @@
   "projects": [
     {
       "id": 1,
-      "title": "PDgigs - Music Score Management System",
-      "description": "Reactive RESTful API for managing music scores in PDF format, built with Spring WebFlux and MongoDB.",
-      "longDescription": "A complete freelance platform backend featuring user authentication, job posting system, proposal management, and integrated payment processing. The architecture follows microservices principles with API Gateway pattern.",
-      "stack": ["Java 17", "Spring Boot", "Spring Security", "MongoDB", "Docker", "JWT"],
-      "videoUrl": "/demos/pdgigs-demo.mp4",
-      "demoUrl": "https://pdgigs-demo.vercel.app",
-      "docsUrl": "https://pdgigs-api-docs.swagger.io",
-      "githubUrl": "https://github.com/adolcc/pdgigs",
+      "title": "ITA Challenges Platform",
+      "description": "Team-built platform for programming challenges with submission and ranking system.",
+      "stack": ["Java", "Spring Boot", "PostgreSQL", "JWT", "React", "TypeScript"],
+      "demoUrl": "http://dev.ita-challenges.eurecatacademy.org/ita-challenge/challenges",
+      "githubUrl": "https://github.com/IT-Academy-BCN/ita-challenges-backend",
+      "status": "🚀 In Production",
       "features": [
-        "JWT-based authentication & authorization",
-        "RESTful API with proper status codes",
-        "Docker containerization",
-        "Integration tests with Testcontainers",
-        "API documentation with Swagger/OpenAPI"
+        "Team collaboration project",
+        "Full authentication system",
+        "Challenge submission workflow",
+        "Production deployment"
       ]
+    },
+    {
+      "id": 2,
+      "title": "Developer Portfolio",
+      "description": "This responsive portfolio built with Spring Boot backend and React frontend.",
+      "stack": ["Java", "Spring Boot", "React", "Vercel"],
+      "demoUrl": "https://spring-react-portfolio.vercel.app/",
+      "githubUrl": "https://github.com/adolcc/spring-react-portfolio",
+      "status": "✅ Live & Maintained",
+      "features": [
+        "Full-stack demonstration",
+        "Easy content updates via JSON",
+        "Responsive design",
+        "Auto-deployment pipeline"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "PDFGigs - Sheet Music Manager",
+      "description": "Hexagonal architecture application for musicians to manage PDF scores with reactive backend.",
+      "longDescription": "Full-stack application implementing Hexagonal Architecture (Ports & Adapters) with Spring WebFlux. Features domain-driven design, clear separation of concerns, and Minecraft-themed UI. Built with reactive programming for non-blocking I/O operations.",
+      "stack": ["Java 17", "Spring WebFlux", "MongoDB", "Hexagonal Architecture", "Docker", "React", "TailwindCSS"],
+      "githubUrlBackend": "https://github.com/adolcc/pdgigs",
+      "githubUrlFrontend": "https://github.com/adolcc/pdgigs-frontend",
+      "status": "🛠️ Actively Developing",
+      "features": [
+        "Hexagonal Architecture (Ports & Adapters)",
+        "Reactive REST API with Spring WebFlux",
+        "Domain-driven design approach",
+        "Clear separation: Domain/Application/Infrastructure",
+        "Minecraft-inspired creative UI",
+        "JWT authentication system",
+        "Docker containerization"
+      ],
+      "architecture": "Hexagonal (Ports & Adapters)"
     }
   ]
 }
