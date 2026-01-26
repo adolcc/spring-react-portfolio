@@ -72,7 +72,7 @@ export default function Hero() {
             {/* Greeting */}
             <div className="inline-flex items-center gap-2 text-blue-600 font-medium mb-4 animate-fade-in px-3 py-1.5 bg-blue-50 rounded-full text-sm md:text-base">
               <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-              Hello! I'm
+              Hi there! Thanks for stopping by.
             </div>
 
             {/* Name - Texto más pequeño en móvil */}
@@ -91,12 +91,13 @@ export default function Hero() {
 
             {/* Description */}
             <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mb-8 animate-fade-in-delay-2 leading-relaxed px-2 md:px-0">
-              I build{" "}
+              I really appreciate you taking the time to explore my work. I
+              specialize in building secure, scalable applications with Spring
+              Boot, driven by the belief that clean code is the foundation of
+              every great product.{" "}
               <span className="font-semibold text-blue-600">
-                secure, scalable applications
+                Feel free to take a look around!
               </span>{" "}
-              with Java and Spring Boot. Passionate about clean code, robust
-              architectures, and solving complex backend challenges.
             </p>
 
             {/* Tech badges - Ajustar tamaño */}
